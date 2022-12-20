@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
-import './App.css';
-import Nav from './components/Navigate';
-
+import Home from './components/Home/home';
+import Nav from './components/Navigate/index';
+import Pictures from './components/Pictures/index';
+import Reviews from './components/Reviews/index';
+import SignUp from './components/SignUp/index';
 
 
 export default function App() {
-  const [currentCategory, setCurrentCategory] = useState("Home");
+  const [currentCategory, setCurrentCategory] = useState("Nav");
   const returnCategory = () => {
     if (currentCategory === "Home") {
-      //  return <Home />;
+      return <Home />;
     }
     if (currentCategory === "Pictures") {
-      //   return <Pictures />;
+      return <Pictures />;
     }
     if (currentCategory === "Reviews") {
-      // return <Reviews />;
+      return <Reviews />;
     }
     if (currentCategory === "SignUp") {
-      //   return <SignUp />;
+      return <SignUp />;
     }
   };
   const CategoryChange = (category) => setCurrentCategory(category);
@@ -36,3 +38,5 @@ export default function App() {
     </div>
   );
 };
+
+
