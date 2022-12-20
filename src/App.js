@@ -4,22 +4,26 @@ import Nav from './components/Navigate/index';
 import Pictures from './components/Pictures/index';
 import Reviews from './components/Reviews/index';
 import SignUp from './components/SignUp/index';
+import Login from './components/Login/index';
 
 
 export default function App() {
-  const [currentCategory, setCurrentCategory] = useState("Nav");
+  const [currentCategory, setCurrentCategory] = useState("Home");
   const returnCategory = () => {
     if (currentCategory === "Home") {
       return <Home />;
     }
-    if (currentCategory === "Pictures") {
+    else if (currentCategory === "Pictures") {
       return <Pictures />;
     }
-    if (currentCategory === "Reviews") {
+    else if (currentCategory === "Reviews") {
       return <Reviews />;
     }
-    if (currentCategory === "SignUp") {
+    else if (currentCategory === "SignUp") {
       return <SignUp />;
+    }
+    else if (currentCategory === "Login") {
+      return <Login />;
     }
   };
   const CategoryChange = (category) => setCurrentCategory(category);
@@ -38,5 +42,3 @@ export default function App() {
     </div>
   );
 };
-
-
