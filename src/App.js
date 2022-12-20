@@ -8,10 +8,11 @@ import Login from './components/Login/index';
 
 
 export default function App() {
+  const CategoryChange = (category) => setCurrentCategory(category);
   const [currentCategory, setCurrentCategory] = useState("Home");
   const returnCategory = () => {
     if (currentCategory === "Home") {
-      return <Home />;
+      return <Home CategoryChange = {"Home"}/>;
     }
     else if (currentCategory === "Pictures") {
       return <Pictures />;
@@ -26,7 +27,6 @@ export default function App() {
       return <Login />;
     }
   };
-  const CategoryChange = (category) => setCurrentCategory(category);
 
   return (
     <div>
