@@ -1,68 +1,3 @@
-/*  * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  background: url("./assets/images/jaxhomepage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--light);
-  font-family: "serif";
-}
-
-.topnav {
-  background-color: var(--color-dark);
-  overflow: hidden;
-  border-radius: 8px;
-  position: sticky; top: 0px;
-  z-index: 99;
-}
-
-/* Style the links inside the navigation bar 
-.topnav a { 
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link 
-.topnav a.active {
-  background-color: (var(--color-light));
-  color: white;
-}
-
-.footer {
-  background: var(--color-light);
-  width: auto;
-  padding: 20px 35px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-*/
-
-
-
-/*@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');");*/
-
 * > * {
   font-family: "Poppins", sans-serif;
 }
@@ -75,11 +10,16 @@ body {
   --color-light: #ebebfb;
 }
 
+html {
+  width: 99%;
+  height: 95vh;
+  
+}
+
 .container {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5em;
 }
 
 .board {
@@ -173,6 +113,8 @@ body {
     
   -webkit-background-size: cover;
   background-size: cover;
+  width: 100%;
+  min-height: 100%;
 }
 
 .secretbody {
@@ -233,7 +175,7 @@ body {
   font-variant: small-caps;
   color: #34e7e4;
   font-weight: 600;
-  font-size: 300px;
+  font-size: 250px;
   text-shadow: 10px 10px 1px black;
   vertical-align: middle;
 }
@@ -326,7 +268,7 @@ body {
 
 .footer {
   background: var(--color-light);
-  width: auto;
+  width: 95%;
   padding: 20px 35px;
   display: flex;
   justify-content: center;
@@ -518,3 +460,5 @@ input[type=submit] {
   margin: 4px 2px;
   border-radius: 10px;
 }
+
+

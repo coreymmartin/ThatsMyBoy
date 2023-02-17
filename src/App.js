@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Home from './components/Home/home';
-import Nav from './components/Navigate/index';
+import Home from './components/Home/index';
+import Nav from './components/Navigate';
 import Pictures from './components/Pictures/index';
 import Reviews from './components/Reviews/index';
 import SignUp from './components/SignUp/index';
 
 
 export default function App() {
-  const [currentCategory, setCurrentCategory] = useState("Nav");
+  const [currentCategory, setCurrentCategory] = useState("Home");
   const returnCategory = () => {
     if (currentCategory === "Home") {
       return <Home />;
@@ -24,17 +24,21 @@ export default function App() {
   };
   const CategoryChange = (category) => setCurrentCategory(category);
 
+
+
+
+
   return (
     <div>
       <header>
-        {/* <h1>Jonathan Martin</h1> */}
         <Nav
           currentCategory={currentCategory}
           CategoryChange={CategoryChange}
         />
       </header>
       <main>{returnCategory()}</main>
-      <footer></footer>
+
+      <footer className='footer'>can this please fucking work</footer>
     </div>
   );
 };
