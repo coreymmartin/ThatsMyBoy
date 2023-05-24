@@ -1,6 +1,7 @@
 import Swiper from "./index"
 
 
+
 const swiper = Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
@@ -17,6 +18,8 @@ const swiper = Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+Swiper("./index");
 
 
 export default swiper;

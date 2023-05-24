@@ -3,7 +3,7 @@ import gmajax from "../../assets/images/gmajax.jpg";
 import jax1 from "../../assets/images/jax1.jpg";
 import jax10 from "../../assets/images/jax10.jpg";
 import jax11 from "../../assets/images/jax11.jpg"
-import coreyfeedjax from "../../assets/images/coreyfeedjax.jpg";
+import jax12 from "../../assets/images/jax12.jpg";
 import jax3 from "../../assets/images/jax3.jpg";
 import jax4 from "../../assets/images/jax4.jpg";
 import jax5 from "../../assets/images/jax5.jpg";
@@ -43,7 +43,7 @@ const Gallery = () => {
                         </div>
                         <div className="gallery-item">
                             <div className="content">
-                                <img src={coreyfeedjax} alt="" />
+                                <img src={jax12} alt="" />
                             </div>
                         </div>
                         <div className="gallery-item">

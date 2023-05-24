@@ -113,8 +113,8 @@ body {
     
   -webkit-background-size: cover;
   background-size: cover;
-  width: 100%;
-  min-height: 100%;
+  width: 100rem;
+  min-height: 100rem;
 }
 
 .secretbody {

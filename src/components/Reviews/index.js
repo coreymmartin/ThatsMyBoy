@@ -2,9 +2,10 @@ import React from "react";
 
 
 
+
+
 const Reviews = () => {
     return (
-
         <body>
             <div className="container">
                 <div className="board">
@@ -44,7 +45,7 @@ const Reviews = () => {
         </body>
 
     )
-}
+};
 
 
 export default Reviews;
